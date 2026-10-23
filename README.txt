@@ -47,3 +47,6 @@ No arquivo `app.js`, procure `const INSTAGRAM_URL = "https://www.instagram.com/"
 - Cartões só são renderizados para registros com nome, categoria e URL HTTP(S) válida.
 - Formulário do gerenciador valida o link obrigatório, permite adicionar/editar/remover e exportar/importar JSON.
 - Teste manual em navegador real ainda deve ser feito depois de publicar, pois não há links reais de afiliada cadastrados.
+
+
+VERSAO COM FOTOS EMBUTIDAS: As fotos dos dois produtos estão dentro de products.json em formato de imagem embutida. Para elas aparecerem, envie/atualize também app.js e products.json no repositório. Não é necessário enviar a pasta images nesta versão.
