@@ -1,1 +1,22 @@
-[]
+[
+  {
+    "id": "chaleira-pitia-2l",
+    "name": "Chaleira Elétrica Inox 2 Litros 1500W — Pítia",
+    "category": "Cozinha",
+    "description": "Chaleira de inox com desligamento automático e aquecimento rápido. Disponível em 127V e 220V; confira a voltagem antes de comprar.",
+    "price": 38.99,
+    "oldPrice": 119.99,
+    "link": "https://meli.la/2yCLX6n",
+    "badge": "Achadinho"
+  },
+  {
+    "id": "liquidificador-mondial-l99",
+    "name": "Liquidificador Mondial Turbo Power 550W — L-99 FB",
+    "category": "Cozinha",
+    "description": "Liquidificador Mondial de 550W, na cor preta. Disponível em 127V e 220V; confira a voltagem antes de comprar.",
+    "price": 102.37,
+    "oldPrice": 172.9,
+    "link": "https://meli.la/1r59P9J",
+    "badge": "Mais vendido"
+  }
+]
