@@ -16,7 +16,7 @@
 5. Clique em **Exportar products.json**. O navegador baixa o arquivo.
 6. Substitua o `products.json` antigo pelo novo no repositório do site e publique as alterações. O site público só será atualizado depois desse passo.
 
-Fotos: use uma URL pública de imagem que possa ser acessada sem login. Você pode deixar o campo vazio, e o site mostrará um símbolo decorativo.
+Fotos: o catálogo pode usar URLs públicas de imagens ou arquivos de imagem incluídos no site (por exemplo, `images/chaleira-pitia.png`). As imagens incluídas neste pacote ficam na pasta `images`. Para produtos futuros, mantenha todos os produtos já cadastrados no `products.json` e acrescente os novos registros sem apagar os antigos.
 
 ## Publicar gratuitamente com GitHub Pages
 1. Crie/entre numa conta no GitHub.
