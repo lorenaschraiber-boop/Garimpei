@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff9e8">
+  <meta name="description" content="Garimpei: achadinhos que valem a pena! Produtos interessantes, ofertas e descobertas para o dia a dia.">
+  <title>Garimpei — Achadinhos que valem a pena!</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="top-ribbon"><span>✦</span> ACHADINHOS SELECIONADOS COM CARINHO <span>✦</span></div>
+  <header class="site-header wrap">
+    <a class="brand" href="#" aria-label="Garimpei - início">
+      <span class="brand-mark" aria-hidden="true">g<span>✦</span></span>
+      <span class="brand-name">garimpei<span>.</span></span>
+    </a>
+    <a class="header-pill" href="#vitrine">Explorar achadinhos <span aria-hidden="true">↘</span></a>
+  </header>
+
+  <main>
+    <section class="hero wrap">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> SEU PRÓXIMO ACHADO ESTÁ AQUI</div>
+        <h1>Achadinhos que<br><span>valem a pena!</span></h1>
+        <p>Produtos incríveis, ofertas e descobertas para facilitar seu dia a dia — garimpados para você.</p>
+        <a class="primary-button" href="#vitrine">Quero garimpar <span aria-hidden="true">→</span></a>
+        <div class="hero-note"><span class="sparkle">✦</span> Novas descobertas, sem complicação.</div>
+      </div>
+      <div class="hero-art" aria-label="Ilustração decorativa de sacola de compras">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="floating-tag tag-yellow">BONS ACHADOS <span>✦</span></div>
+        <div class="shopping-bag"><div class="bag-handle"></div><div class="bag-face"><span class="bag-star">✦</span><span class="bag-word">garimpei</span><span class="bag-smile">☺</span></div></div>
+        <div class="floating-tag tag-purple">GARIMPO DO DIA <span>↗</span></div>
+        <div class="mini-spark spark-a">✦</div><div class="mini-spark spark-b">✧</div><div class="mini-spark spark-c">✦</div>
+      </div>
+    </section>
+
+    <section class="catalog wrap" id="vitrine">
+      <div class="section-heading">
+        <div><div class="eyebrow">ESCOLHA SEU PRÓXIMO ACHADO</div><h2>Garimpe por aqui <span>✦</span></h2></div>
+        <p id="result-count" aria-live="polite">Carregando produtos…</p>
+      </div>
+      <div class="search-row">
+        <label class="search-box"><span aria-hidden="true">⌕</span><input id="search-input" type="search" placeholder="Buscar produto, marca ou categoria..." autocomplete="off"><button id="clear-search" type="button" aria-label="Limpar busca" hidden>×</button></label>
+        <label class="select-wrap"><span class="sr-only">Filtrar por categoria</span><select id="category-select"><option value="Todas">Todas as categorias</option></select><span aria-hidden="true">⌄</span></label>
+      </div>
+      <nav class="category-chips" id="category-chips" aria-label="Categorias">
+        <button class="chip active" data-category="Todas" type="button">✦ Todos os achadinhos</button>
+      </nav>
+      <div id="product-grid" class="product-grid"></div>
+      <div id="empty-state" class="empty-state" hidden>
+        <div class="empty-icon">✦</div>
+        <h3>Estamos preparando novos achadinhos!</h3>
+        <p>Volte em breve para descobrir produtos selecionados. Quando houver produtos cadastrados, eles aparecerão aqui.</p>
+      </div>
+      <div id="no-results" class="no-results" hidden>
+        <span>⌕</span><h3>Nenhum achadinho encontrado</h3><p>Tente outro termo ou escolha uma categoria diferente.</p>
+        <button id="reset-filters" class="secondary-button" type="button">Limpar filtros</button>
+      </div>
+      <p class="affiliate-note"><span>ⓘ</span> Alguns links são de afiliada. Se você comprar por eles, podemos receber uma comissão, sem custo adicional para você.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner wrap">
+      <div class="footer-brand"><a class="brand" href="#"><span class="brand-mark" aria-hidden="true">g<span>✦</span></span><span class="brand-name">garimpei<span>.</span></span></a><p>Pequenos achados, grandes descobertas.</p></div>
+      <div class="footer-social"><span class="footer-label">ACOMPANHE O GARIMPO</span><a id="instagram-link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram <span>↗</span></a><small>Personalize o Instagram no arquivo <code>app.js</code>.</small></div>
+      <div class="footer-disclaimer"><span class="footer-label">TRANSPARÊNCIA</span><p>Alguns links deste site são links de afiliados. Podemos receber uma comissão por compras realizadas por meio deles, sem custo adicional para você.</p><p>Preços e disponibilidade podem mudar no Mercado Livre. Confira as condições na página do produto antes de comprar.</p></div>
+    </div>
+    <div class="footer-bottom"><div class="wrap">© <span id="year"></span> Garimpei. Feito para encontrar coisas boas. <span>Não somos o Mercado Livre.</span></div></div>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
