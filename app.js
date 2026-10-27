@@ -39,7 +39,7 @@ function cardMarkup(p) {
   const oldPrice = formatPrice(p.oldPrice);
   const discount = (p.oldPrice && p.price && Number(p.oldPrice) > Number(p.price))
     ? `${Math.round((1 - Number(p.price) / Number(p.oldPrice)) * 100)}% OFF` : "";
-  const image = validHttpUrl(p.image) ? `<img class="product-image" src="${escapeHtml(p.image)}" alt="${escapeHtml(p.name)}" loading="lazy" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><div class="product-placeholder" hidden>✦</div>`
+  const image =(validHttpUrl(p.image) || String(p.image || "").startsWith("data:image/")) '<img class="product-image" src="${escapeHtml(p.image)}" alt="${escapeHtml(p.name)}" loading="lazy" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><div class="product-placeholder" hidden>✦</div>`
     : `<div class="product-placeholder" aria-hidden="true">✦</div>`;
   return `<article class="product-card">
     <div class="product-image-wrap">${image}${p.badge ? `<span class="product-badge">${escapeHtml(p.badge)}</span>` : ""}</div>
